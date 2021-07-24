@@ -7,9 +7,12 @@ import { Row } from "../src/components/lib";
 import logo from "./assets/imgs/test_photo.png";
 export const AuthenticatedApp = () => {
   const { logout, user } = useAuth();
+  // 模拟异常
+  const value: any = undefined;
   return (
     <div>
       <Container>
+        {value.notExist}
         <Header between={true}>
           <HeaderLeft gap={true}>
             <img src={logo} style={{ width: "2rem", height: "2rem" }} />
